@@ -104,14 +104,15 @@ function App() {
         </div>
 
         <div className="add_model">
-          <h2>AGREGAR IMAGEN:</h2>
+          
           <div className="modelo">
-            <input
-              class="custom-file-input"
-              type="file"
-              onChange={handleChange}
-            />
-            <button className="fakebtn">Subir imagen</button>
+          <h2>AGREGAR IMAGEN:</h2>
+            <input type="file" name="file" id="file" class="inputfile" onChange={handleChange}/>
+            
+            <label for="file">Subir imagen</label>
+            
+           
+           
           </div>
         </div>
 
