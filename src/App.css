@@ -1,19 +1,22 @@
 .App {
   text-align: center;
+  margin-bottom: 0px;
+  
 }
+
 @import url("https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap");
-body {
+html {
   font-family: "PT Sans", sans-serif;
   font-weight: 900;
-  width: 100vw;
+  
   background-image: url("./Background.png");
-  height: 115vh;
+  color: white;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom: 140px;
-  margin-bottom: 0px;
+  background-size:cover;min-height:100%;
+  margin-bottom: 0px; padding-bottom: 0px;
 }
+
 .navbar {
   width: 100%;
   align-items: center;
@@ -24,7 +27,7 @@ body {
 
 .options {
   margin-top: 0px;
-  margin-left: 0%;
+  margin-left: 80px;
 }
 .buttons {
   display: flex;
@@ -82,7 +85,7 @@ select {
   justify-content: center;
   align-items: center;
   margin-top: 15px;
-  
+
   position: relative;
 }
 
@@ -95,7 +98,6 @@ select {
   z-index: -1;
   color: transparent;
   padding: 16px;
-  
 }
 .contenedor-centro {
   display: flex;
@@ -116,7 +118,7 @@ select {
 }
 
 .img-container img {
-  margin-left: 40px;
+  margin-left: 0px;
   width: 600px;
 }
 .img-container {
@@ -144,7 +146,7 @@ select {
   width: 598px !important;
   height: 242px !important;
 
-  border-radius: 14px;
+  border-radius: 18px;
   z-index: -1;
   border: none;
   margin-top: 0px !important;
@@ -157,7 +159,7 @@ select {
   width: 598px !important;
   height: 305px !important;
 
-  border-radius: 14px;
+  border-radius: 18px;
   z-index: -1;
   border: none;
   margin-top: 0px !important;
@@ -170,7 +172,7 @@ select {
   width: 598px !important;
   height: 313px !important;
 
-  border-radius: 14px;
+  border-radius: 18px;
   z-index: -1;
   border: none;
   margin-top: 0px !important;
@@ -182,7 +184,6 @@ select {
   overflow: hidden;
   position: absolute;
   z-index: -1;
-  
 }
 .inputfile + label {
   margin-left: 40px;
@@ -234,8 +235,21 @@ select {
   border-radius: 10px;
   box-shadow: 3px 3px #00000055;
 }
+.selector_size{margin-bottom: 0px;padding-bottom: 100px !important;}
 
+.icons img{width: 25px;}
+
+
+.instagram{position: absolute; height: auto; top: 3.6vh;left: 94vw; }
+
+.instagram img{width: 50px;}
+.instagram img:hover{width: 55px;}
 @media (max-width: 768px) {
+
+  .instagram{position: relative; height: auto; top: 0;left: 0;margin-top: 0px;}
+
+.instagram img{width: 40px;}
+
   .button-50 {
     padding: 12px 50px;
   }
@@ -277,8 +291,9 @@ select {
   }
   .options {
     margin-top: 20px;
-    margin-left: -110px !important;
+    justify-content: center;
     width: 100%;
+    margin-left: -130px;
   }
   .buttons {
     width: 80px;
@@ -296,9 +311,8 @@ select {
 
   .Mail {
     margin-top: 80px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
   }
-
 
   .add_model {
     margin-top: 40px;
@@ -314,12 +328,15 @@ select {
   html,
   body {
     width: 100%;
-    height: 100%;
+    
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
     padding-bottom: 40px;
   }
+
+  body{height: 99vh;}
+  
   .absM {
     position: absolute !important;
     top: 60px;
