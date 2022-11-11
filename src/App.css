@@ -201,7 +201,7 @@ select {
 .inputfile + label:hover {
   transform: scale(1.1);
 }
-.absone {
+.absnone {
   visibility: hidden;
   display: none;
 }

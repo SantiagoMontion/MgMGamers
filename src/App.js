@@ -8,7 +8,7 @@ import "./App.css";
 import React, { useState } from "react";
 
 function App() {
-  const [selectedClient, setSelectedClient] = useState("one"); //default value
+  const [selectedClient, setSelectedClient] = useState("none"); //default value
   const [Bandera, setBandera] = useState("");
   const [file, setFile] = useState();
 
@@ -20,14 +20,12 @@ function App() {
   function handleSelectChange(string) {
     setSelectedClient(string);
   }
-  
+
   return (
-    
     <div className="App">
-      
       <div className="selector_size">
         <div className="navbar">
-          <a href="https://mgm.empretienda.com.ar/" target="_blank" >
+          <a href="https://mgm.empretienda.com.ar/" target="_blank">
             <img className="mgm-logo" src={Logo}></img>
           </a>
         </div>
@@ -46,7 +44,7 @@ function App() {
                   </h4>
                 </div>
               )}
-              {selectedClient === "one" && (
+              {selectedClient === "none" && (
                 <>
                   <img classname="full_img" src={img_none}></img>
                 </>
@@ -126,8 +124,9 @@ function App() {
           <a
             target="_blank"
             className="button-email"
-            href="https://wa.me/2644853377?text=Buenas!%20👋%20Ya%20me%20decidí%20por%20la%20medida...
-            "
+            href={
+              "https://wa.me/2644853377?text=Buenas!%20Ya%20me%20decidí%20por%20la%20medida" +" "+selectedClient
+            }
           >
             HABLANOS
           </a>
@@ -135,11 +134,10 @@ function App() {
       </div>
 
       <div className="instagram">
-        <a target="_blank" href="https://www.instagram.com/mousepadsmgm/"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png"></img></a>
+        <a target="_blank" href="https://www.instagram.com/mousepadsmgm/">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png"></img>
+        </a>
       </div>
-
-
-
     </div>
   );
 }
