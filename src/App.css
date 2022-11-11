@@ -1,12 +1,328 @@
 .App {
   text-align: center;
 }
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap");
+body {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 900;
+  width: 100vw;
+  background-image: url("./Background.png");
+  height: 115vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 90px;
+  margin-bottom: 0px;
+}
+.navbar {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  display: flex;
+}
 
+.options {
+  margin-left: 110px;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  width: 140px;
+}
+
+.btn {
+  padding: 20px;
+  background-color: #fab7c3;
+  font-family: "PT Sans", sans-serif;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.btn:hover {
+  background-color: white;
+  color: #fab7c3;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+.mgm-logo {
+  width: 70px;
+}
+.mgm-logo:hover {
+  width: 90px;
+}
+.subtitle {
+  width: 100%;
+  margin-top: 10px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  font-weight: 900;
+  text-shadow: 1px 3px #00000055;
+}
 
+select {
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 16px;
+}
+.add_model {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-left: 160px;
+  position: relative;
+  
+}
+
+.modelo {
+  margin-left: 10px;
+}
+.custom-file-input {
+  z-index: -1;
+  color: transparent;
+  padding: 16px;
+}
+.contenedor-centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  background-color: #fafafab5;
+  margin-left: 250px;
+  margin-right: 250px;
+  border-radius: 30px;
+}
+
+.contenedor_modelo {
+  padding: 40px;
+  margin-right: 10px;
+  border-radius: 30px;
+  z-index: 2 !important;
+}
+.fakebtn {
+  position: absolute;
+  z-index: 1;
+  margin-left: -270px;
+  padding: 16px;
+  pointer-events: none;
+  background-color: #58c3c3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 3px 3px #00000055;
+}
+.img-container img {
+  margin-left: 40px;
+  width: 380px;
+}
+.img-container {
+  position: relative;
+
+  height: auto;
+}
+
+.absM {
+  position: absolute !important;
+  top: 48px;
+  left: 1px;
+  width: 378px !important;
+  height: 132px !important;
+
+  border-radius: 14px;
+  z-index: -1;
+  border: none;
+  margin-top: 0px !important;
+}
+.absL {
+  position: absolute !important;
+  top: 22px;
+  left: 1px;
+  width: 378px !important;
+  height: 152px !important;
+
+  border-radius: 14px;
+  z-index: -1;
+  border: none;
+  margin-top: 0px !important;
+}
+
+.absXL {
+  position: absolute !important;
+  top: 0px;
+  left: 1px;
+  width: 378px !important;
+  height: 192px !important;
+
+  border-radius: 14px;
+  z-index: -1;
+  border: none;
+  margin-top: 0px !important;
+}
+
+.absXXL {
+  position: absolute !important;
+  top: 0px;
+  left: 1px;
+  width: 378px !important;
+  height: 199px !important;
+
+  border-radius: 14px;
+  z-index: -1;
+  border: none;
+  margin-top: 0px !important;
+}
+
+.absone {
+  visibility: hidden;
+  display: none;
+}
+
+.precio {
+  margin-left: 40px;
+  color: #9680af;
+}
+
+.Mail {
+  margin-top: 40px;
+}
+
+.Mail h2 {
+  font-size: 28px;
+  font-weight: 900;
+  text-shadow: 1px 3px #00000055;
+  margin-bottom: 40px;
+}
+.add_model h2 {
+  font-size: 20px;
+  font-weight: 900;
+  text-shadow: 1px 3px #00000055;
+}
+
+.button-email {
+  padding: 20px;
+  background-color: #b8a5ce;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 3px 3px #00000055;
+}
+
+@media (max-width: 768px) {
+  
+  .button-50 {
+    padding: 12px 50px;
+  }
+  .contenedor-centro {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .buttons{flex-direction: row;margin-left: 0px;}
+
+  .btn{margin-right: 5px;margin-left: 5px;}
+  .modelo{margin-left: 20px;}
+  .contenedor_modelo {
+    padding: 0px;
+  }
+  .img-container img {
+    margin-top: 20px;
+    width: 320px;
+    margin-left: 10px;
+  }
+  .options {
+    margin-top: 20px;
+    margin-left: -110px !important;
+    width: 100%;
+  }
+  .buttons {
+    width: 80px;
+    margin-left: 70px;
+  }
+  .btn {
+    padding: 10px;
+    font-size: 12px;
+  }
+  .precio {
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+
+ 
+  .Mail{margin-top: 80px;margin-bottom: 50px;}
+
+  .add_model{margin-top: 40px;}
+  .add_model h2{width: 100%;}
+  .subtitle{margin-top: 50px;margin-bottom: 50px;}
+
+  html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+.absM {
+  position: absolute !important;
+  top: 60px;
+  left: 1px;
+  width: 318px !important;
+  height: 110px !important;
+
+  border-radius: 9px;
+  z-index: -1;
+  border: none;
+  margin-top: 0px !important;
+}
+.absL {
+  position: absolute !important;
+  top: 39px;
+  left: 1px;
+  width: 318px !important;
+  height: 128px !important;
+
+  border-radius: 9px;
+  z-index: -1;
+  border: none;
+  margin-top: 0px !important;
+}
+
+.absXL {
+  position: absolute !important;
+  top: 20px;
+  left: 1px;
+  width: 318px !important;
+  height: 162px !important;
+
+  border-radius: 9px;
+  z-index: -1;
+  border: none;
+  margin-top: 0px !important;
+}
+
+.absXXL {
+  position: absolute !important;
+  top: 20px;
+  left: 1px;
+  width: 318px !important;
+  height: 166px !important;
+
+  border-radius: 9px;
+  z-index: -1;
+  border: none;
+  margin-top: 0px !important;
+}
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
