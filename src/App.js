@@ -12,10 +12,6 @@ function App() {
   const [Bandera, setBandera] = useState("");
   const [file, setFile] = useState();
 
-  function handle_change(e) {
-    console.log(e.target.value);
-  }
-
   function handleChange(e) {
     setFile(URL.createObjectURL(e.target.files[0]));
     setBandera("true");
@@ -114,7 +110,7 @@ function App() {
               type="file"
               name="file"
               id="file"
-              class="inputfile"
+              classname="inputfile"
               onChange={handleChange}
             />
 
