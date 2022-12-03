@@ -6,11 +6,16 @@ import img_none from "./img_none.png";
 import Logo from "./Logo.png";
 import "./App.css";
 import React, { useState } from "react";
+import TextField from "@mui/material/TextField";
 
 function App() {
   const [selectedClient, setSelectedClient] = useState("none"); //default value
   const [Bandera, setBandera] = useState("");
   const [file, setFile] = useState();
+
+  function handle_change(e) {
+    console.log(e.target.value);
+  }
 
   function handleChange(e) {
     setFile(URL.createObjectURL(e.target.files[0]));
@@ -25,7 +30,7 @@ function App() {
     <div className="App">
       <div className="selector_size">
         <div className="navbar">
-          <a href="https://mgm.empretienda.com.ar/" target="_blank">
+          <a href="https://mgmgamers.com.ar" target="_blank">
             <img className="mgm-logo" src={Logo}></img>
           </a>
         </div>
@@ -125,7 +130,9 @@ function App() {
             target="_blank"
             className="button-email"
             href={
-              "https://wa.me/2644853377?text=Buenas!%20Ya%20me%20decidí%20por%20la%20medida" +" "+selectedClient
+              "https://wa.me/2644853377?text=Buenas!%20Ya%20me%20decidí%20por%20la%20medida" +
+              " " +
+              selectedClient
             }
           >
             HABLANOS
