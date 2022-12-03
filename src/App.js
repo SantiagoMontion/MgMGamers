@@ -6,16 +6,11 @@ import img_none from "./img_none.png";
 import Logo from "./Logo.png";
 import "./App.css";
 import React, { useState } from "react";
-import TextField from "@mui/material/TextField";
 
 function App() {
   const [selectedClient, setSelectedClient] = useState("none"); //default value
   const [Bandera, setBandera] = useState("");
   const [file, setFile] = useState();
-
-  function handle_change(e) {
-    console.log(e.target.value);
-  }
 
   function handleChange(e) {
     setFile(URL.createObjectURL(e.target.files[0]));
