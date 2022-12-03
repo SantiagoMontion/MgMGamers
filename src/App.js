@@ -110,7 +110,7 @@ function App() {
               type="file"
               name="file"
               id="file"
-              classname="inputfile"
+              class="inputfile"
               onChange={handleChange}
             />
 
