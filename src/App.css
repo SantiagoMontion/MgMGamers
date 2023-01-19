@@ -17,7 +17,9 @@ html {
   margin-bottom: 0px;
   padding-bottom: 0px;
 }
-
+.more-info-2{margin-top: 80px;}
+.subtitle-h4{margin-top: 30px;}
+.subtitle-h3{margin-bottom: 30px;}
 .navbar {
   width: 100%;
   align-items: center;
