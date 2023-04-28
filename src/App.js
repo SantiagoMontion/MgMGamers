@@ -40,7 +40,7 @@ function App() {
                     <img className={`abs${selectedClient}`} src={file} />
                   )}
                   <h4 className="precio">
-                    Precio: $4000 + Envio gratis <br></br>a sucursal del correo.
+                    + Envio gratis <br></br>a sucursal del correo.
                   </h4>
                 </div>
               )}
@@ -56,7 +56,7 @@ function App() {
                     <img className={`abs${selectedClient}`} src={file} />
                   )}
                   <h4 className="precio">
-                    Precio: $4600 + Envio gratis <br></br>a sucursal del correo.
+                    + Envio gratis <br></br>a sucursal del correo.
                   </h4>
                 </>
               )}
@@ -67,7 +67,7 @@ function App() {
                     <img className={`abs${selectedClient}`} src={file} />
                   )}
                   <h4 className="precio">
-                    Precio: $5000 + Envio gratis <br></br>a sucursal del correo.
+                    + Envio gratis <br></br>a sucursal del correo.
                   </h4>
                 </>
               )}
@@ -78,7 +78,7 @@ function App() {
                     <img className={`abs${selectedClient}`} src={file} />
                   )}
                   <h4 className="precio">
-                    Precio: $5400 + Envio gratis <br></br>a sucursal del correo.
+                    + Envio gratis <br></br>a sucursal del correo.
                   </h4>
                 </>
               )}
@@ -132,17 +132,22 @@ function App() {
           >
             HABLANOS
           </a>
-          <h4 className="subtitle-h4">Podes pasarnos la imagen que elegiste como Link por What's App o podes enviarla a  email
-            <br></br>mgmpads@gmail.com</h4>
+          <h4 className="subtitle-h4">
+            Podes pasarnos la imagen que elegiste como Link por What's App o
+            podes enviarla a email
+            <br></br>hola@mgmgamers.selector_size
+          </h4>
         </div>
         <div className="more-info-2">
-            <h3 className="subtitle-h3">No te olvides que estas no son nuestras unicas medidas...<br></br>Vos podes personalizar y elegir la tuya a tu gusto
-            <br></br>LLegamos hasta 150x100cm...<br></br></h3>
-            <a
+          <h3 className="subtitle-h3">
+            No te olvides que estas no son nuestras unicas medidas...<br></br>
+            Vos podes personalizar y elegir la tuya a tu gusto
+            <br></br>LLegamos hasta 150x100cm...<br></br>
+          </h3>
+          <a
             target="_blank"
             className="button-email"
             href="https://mgmgamers.store/mousepad-personalizado/"
-            
           >
             ACÁ TE ENSEÑAMOS COMO
           </a>
