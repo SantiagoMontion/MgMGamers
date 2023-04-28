@@ -155,7 +155,7 @@ function App() {
       </div>
 
       <div className="instagram">
-        <a target="_blank" href="https://www.instagram.com/mousepadsmgm/">
+        <a target="_blank" href="https://www.instagram.com/mgmgamers.store/">
           <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png"></img>
         </a>
       </div>
